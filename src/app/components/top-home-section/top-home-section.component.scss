@@ -1,0 +1,26 @@
+.topContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+
+    .home-top-text {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .degree {
+        margin-top: 2rem;
+    }
+
+    .rounded-full {
+        border-radius: 50%;
+    }
+
+    .rounded {
+        border-radius: 3%;
+    }
+
+}

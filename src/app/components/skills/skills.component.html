@@ -1,0 +1,112 @@
+<div>
+    <h3 class="text-center font-bold cyan">Skills</h3>
+    <section>
+
+        <h5 class="text-center font-medium cyan">Languages</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of languagesImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{languagesText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+    <section>
+
+        <h5 class="text-center font-medium cyan">Frameworks</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of frameworksImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{frameworksText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+    <section>
+
+        <h5 class="text-center font-medium cyan">Databases</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of databaseImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{databaseText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+    <section>
+
+        <h5 class="text-center font-medium cyan">CMS</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of cmsImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{cmsText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+    <section>
+
+        <h5 class="text-center font-medium cyan">Tools</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of toolsImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{toolsText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+    <section>
+
+        <h5 class="text-center font-medium cyan">Design</h5>
+        <div class="languages-container">
+
+
+
+
+            @for (img of designImg; track $index; let i = $index) {
+
+            <app-skill-card [img]="img">
+
+                {{designText[i]}}
+
+            </app-skill-card>
+            }
+        </div>
+    </section>
+
+</div>

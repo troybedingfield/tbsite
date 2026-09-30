@@ -1,0 +1,6 @@
+<button (click)="handleButtonClick($event)"
+    class="{{ color }} {{ fill }} {{ size }} {{upperCase === true ? 'text-uppercase' : ''}}" [disabled]="disabled"
+    [style.maxWidth]="maxWidth + 'px'" [style.minWidth]="minWidth + 'px'" [style.backgroundColor]="customBGColor"
+    [style.color]="customColor" [style.borderColor]="customBorderColor" [type]=buttonType>
+    <ng-content></ng-content>
+</button>

@@ -1,0 +1,28 @@
+<div class="split-container">
+    <button class="{{ color }} {{ fill }} {{ size }} {{uppercase === true ? 'text-uppercase' : ''}}"
+        [disabled]="disabled" [style.maxWidth]="maxWidth + 'px'" [style.minWidth]="minWidth + 'px'"
+        [style.backgroundColor]="customBGColor" (click)="buttonClicked($event)">
+        <ng-content></ng-content>
+    </button>
+    <div class="dropdown">
+        <button #dropdownButton class="{{ color }} {{ fill }} {{ size }} {{uppercase === true ? 'text-uppercase' : ''}}"
+            [disabled]="disabled" [style.maxWidth]="maxWidth + 'px'" [style.minWidth]="minWidth + 'px'"
+            [style.backgroundColor]="customBGColor" [ngClass]="isOpen" (click)="splitOpen($event)">
+            <span class="down-arrow"></span>
+        </button>
+        <div class="dropdown-content" #dropdownMenu [ngClass]="isOpen">
+
+            @for (item of dropdownItems; track $index) {
+            <a role="button" tabindex="0" (keyup.enter)="setValue(item)" (mousedown)="setValue(item)"
+                (click)="setValue(item)">
+                {{ item }}
+            </a>
+            }
+            <!-- <ng-container *ngFor="let item of dropdownItems">
+                
+            </ng-container> -->
+
+
+        </div>
+    </div>
+</div>

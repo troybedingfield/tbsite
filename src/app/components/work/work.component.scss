@@ -1,0 +1,104 @@
+:host {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    section {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-container {
+        position: relative;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2rem 0;
+        width: 100%;
+    }
+
+    .marketing-work {
+        max-width: 1280px;
+        margin-top: 24px;
+        margin: 0 auto;
+        width: 100%;
+
+
+        & * {
+            color: white;
+        }
+
+        .home-two-column {
+            display: flex;
+            width: 100%;
+            padding: 0 12px;
+            max-width: 1280px;
+            margin: 0 auto;
+
+            .column1 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .column2 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                justify-content: center;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:768px) {
+        .home-two-column {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            .column1 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .column2 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                justify-content: center;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}

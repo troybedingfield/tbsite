@@ -1,0 +1,15 @@
+<header>
+
+    <a href="#" (click)="goHome($event)" class="header-name text-center">TB</a>
+    <div class="flex w-auto items-center">
+
+        <!-- <app-button (buttonClick)="onLogout()">Logout</app-button> -->
+    </div>
+
+    <div class="right">
+        <a href="https://www.linkedin.com/in/troy-bedingfield-0b5850a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/troybedingfield/" target="_blank">GitHub</a>
+        <app-split-button (eventValue)="handleValue($event)" (buttonClick)="handleButton($event)" [uppercase]="true"
+            [dropdownItems]="['PDF', 'DOC']">Resume</app-split-button>
+    </div>
+</header>
